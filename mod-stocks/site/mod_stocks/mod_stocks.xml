@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_stocks</name>
+    <author>Joomlatools</author>
+    <creationDate>Dec 2016</creationDate>
+    <copyright>Copyright (C) 2011 - 2016 Timble CVBA (http://www.timble.net)</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>support@joomlatools.com</authorEmail>
+    <authorUrl>www.joomlatools.com</authorUrl>
+    <version>1.0.0</version>
+    <description>A module that displays stock information for a company.</description>
+    <files>
+        <filename module="mod_stocks">mod_stocks.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="layout" type="radio" label="Layout">
+                    <option value="narrow">Narrow</option>
+                    <option value="wide">Wide</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
